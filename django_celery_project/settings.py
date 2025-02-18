@@ -141,7 +141,7 @@ CELERY_RESULT_BACKEND = "django-db"
 CELERY_BEAT_SCHEDULER = 'django_celery_beat.schedulers:DatabaseScheduler'
 
 
-# zfyf rbum yket whlf
+
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'  # SMTP server for Gmail
@@ -150,3 +150,10 @@ EMAIL_USE_TLS = True  # Enable TLS (Transport Layer Security)
 EMAIL_HOST_USER = 'yashkesharwani157@gmail.com'  # Your Gmail address
 EMAIL_HOST_PASSWORD = 'zfyfrbumyketwhlf  '  # Use Google App Password
 DEFAULT_FROM_EMAIL = 'Celery <yashkesharwani157@gmail.com>'  # Default sender email
+
+
+# celery -A django_celery_project beat -l INFO
+
+# celery -A django_celery_project.celery worker -l info
+
+# sudo systemctl status redis-server 
